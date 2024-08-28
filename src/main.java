@@ -16,7 +16,7 @@ public class main {
             int halfw1 = word1.length() / 2;
             int halfw2 = word2.length() /2;
 
-            String newWord = word1.substring(0,halfw1) + word2.substring(halfw2);
+            String newWord = word1.substring(halfw1) + word2.substring(halfw2);
 
             System.out.println("New word: " + newWord);
 
