@@ -14,8 +14,16 @@ public class TaskIterator {
 
     public static void main(String[] args) {
 
-        List<String> names = new ArrayList<>(List.of("Mary", "Jane", "Tom", "Tim", "Mark", "Ann", null, ""));
+        List<String> names = new ArrayList<>();
 
+        names.add("Mary");
+        names.add("Jane");
+        names.add("Tom");
+        names.add("Tim");
+        names.add("Mark");
+        names.add("Ann");
+        names.add(null);
+        System.out.println(names);
         Iterator <String> iterator = names.iterator();
         while (iterator.hasNext()) {
             String name = iterator.next();
